@@ -59,3 +59,20 @@ psw: password123
 kubectl exec -it {PODE_NAME} -- /bin/bash
 curl http://localhost:9200
 ```
+
+## PostgreSql
+
+**Для применения манифеста:**
+`kubectl apply -f manifests/postgres-deployment.yaml`
+
+Для входа в psql:
+```
+kubectl exec -it {PODE_NAME} -- /bin/bash
+psql -U admin -d mydb
+```
+
+Был задан юзер.
+```
+login: admin
+psw: password123
+```
