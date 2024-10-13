@@ -31,3 +31,21 @@
 login: admin
 psw: password123
 ```
+
+## Neo4j
+
+**Для применения манифеста:**
+`kubectl apply -f manifests/neo4j-deployment.yaml`
+
+Для входа в neo:
+```
+kubectl exec -it {PODE_NAME} -- /bin/bash
+cypher-shell -u neo4j -p password123
+```
+
+Был задан юзер.
+```
+login: neo4j
+psw: password123
+```
+
