@@ -49,3 +49,13 @@ login: neo4j
 psw: password123
 ```
 
+## ElasticSearch
+
+**Для применения манифеста:**
+`kubectl apply -f manifests/elasticsearch-deployment.yaml`
+
+Для входа в neo:
+```
+kubectl exec -it {PODE_NAME} -- /bin/bash
+curl http://localhost:9200
+```
